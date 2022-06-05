@@ -67,12 +67,18 @@ function calcularAreaCuadrado(){
    //alert(area);
 }
 function calcularAltura(){
-    const input = document.getElementById("InputTriangulo");
+    const input = document.getElementById("InputTrianguloA");
     //console.log(input);
     const valor = input.value;
+    const input2 = document.getElementById("InputTrianguloB");
+    //console.log(input);
+    const valor2 = input.value;
+    const input3 = document.getElementById("InputTrianguloBase");
+    //console.log(input);
+    const valor3 = input.value;
     //console.log(valor);
  
-    const altura = alturaTriangulo(ladoa,ladob,base);
+    const altura = alturaTriangulo(valor,valor2,valor3);
     const Resultp = document.getElementById("Resultado");s
     Resultp.innerText = "La altura del triangulo es"+altura;
     //alert(area);
