@@ -44,7 +44,7 @@ function alturaTriangulo(ladoa,ladob,base){
     return (Math.sqrt((ladoa*ladob)-(((base/2)*(base/2)))));
     }
     else{
-        console.error("los lados deben ser iguales");
+        return("los lados deben ser iguales");
     }
  }
 //console.groupEnd();
