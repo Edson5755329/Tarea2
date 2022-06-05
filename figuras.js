@@ -40,7 +40,7 @@ function areaCirculo(radio){
    return (radio*radio)*PI;
 }
 function alturaTriangulo(ladoa,ladob,base){
-    return (Math.sqrt((ladoa*ladob)-(((base)^2)/4)));
+    return (Math.sqrt((ladoa*ladob)-(((base/2)*(base/2)))));
  }
 //console.groupEnd();
 
