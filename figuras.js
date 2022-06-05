@@ -72,10 +72,10 @@ function calcularAltura(){
     const valor = input.value;
     const input2 = document.getElementById("InputTrianguloB");
     //console.log(input);
-    const valor2 = input.value;
+    const valor2 = input2.value;
     const input3 = document.getElementById("InputTrianguloBase");
     //console.log(input);
-    const valor3 = input.value;
+    const valor3 = input3.value;
     //console.log(valor);
  
     const altura = alturaTriangulo(valor,valor2,valor3);
