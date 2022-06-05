@@ -40,7 +40,12 @@ function areaCirculo(radio){
    return (radio*radio)*PI;
 }
 function alturaTriangulo(ladoa,ladob,base){
+    if(ladoa===ladob){
     return (Math.sqrt((ladoa*ladob)-(((base/2)*(base/2)))));
+    }
+    else{
+        console.error("los lados deben ser iguales");
+    }
  }
 //console.groupEnd();
 
