@@ -85,6 +85,6 @@ function calcularAltura(){
  
     const altura = alturaTriangulo(valor,valor2,valor3);
     const Resultp = document.getElementById("Rsultado");
-    Resultp.innerText = "La altura del triangulo es"+altura;
+    Resultp.innerText = "La altura del triangulo es "+ altura;
     //alert(area);
  }
