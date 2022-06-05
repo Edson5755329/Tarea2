@@ -39,6 +39,9 @@ function perimetroCirculo(radio){
 function areaCirculo(radio){
    return (radio*radio)*PI;
 }
+function alturaTriangulo(ladoa,ladob,base){
+    return ((ladoa*ladob)-(base/4))^(1/2);
+ }
 //console.groupEnd();
 
 
@@ -63,3 +66,14 @@ function calcularAreaCuadrado(){
    Resultp.innerText = "El area del cuadrado es"+area;
    //alert(area);
 }
+function calcularAltura(){
+    const input = document.getElementById("InputTriangulo");
+    //console.log(input);
+    const valor = input.value;
+    //console.log(valor);
+ 
+    const altura = alturaTriangulo(ladoa,ladob,base);
+    const Resultp = document.getElementById("Resultado");s
+    Resultp.innerText = "La altura del triangulo es"+altura;
+    //alert(area);
+ }
