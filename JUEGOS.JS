@@ -50,12 +50,13 @@ function juegos2(PC,USU){
 }
 // reto 3 
 
-function auto(marca, annio, color){
+function auto(placa, marca, annio, color){
+        this.placa = placa,
        	this.marca = marca,
        	this.annio = annio,
-            this.color = color
+        this.color = color
 };
-
+var placaAuto = [];
 var marcaAuto = ['Toyota', 'Tesla', 'Audi', 'Volkswagen'];
 var annioAuto = [2017, 2018, 2019, 2020, 2021];
 var colorAuto = ['Negro', 'Rojo', 'Plateado', 'Blanco'];
@@ -63,13 +64,13 @@ var listaAutos = [];
 
 
 function generarAutos(cant){
-    for (i = 0; i < cant; i++){
+    for (i = 0000; i < cant; i++){
+        var placa = i;
         var marca = marcaAuto[Math.floor(Math.random() * marcaAuto.length)];
         var annio = annioAuto[Math.floor(Math.random() * annioAuto.length)];
         var color = colorAuto[Math.floor(Math.random() * colorAuto.length)];
-        listaAutos.push(new auto(marca, annio, color));
-        //var resultado = `Auto [${i+1}] ${listaAutos}`
-        
+        listaAutos.push(new auto(placa, marca, annio, color));
+      
         console.log(listaAutos[i]);
     }
 }
